@@ -170,29 +170,23 @@ body {
 
     .left .envelope,
     .right .envelope {
-        margin: 10px auto;
+        margin: 70px auto;
+        margin-bottom: 70px;
+        /* Add margin-bottom for gap */
     }
 
     .envelope>.letter {
         right: 20%;
-        /* Adjust position of letter */
         bottom: 20%;
-        /* Adjust position of letter */
         width: 50%;
-        /* Adjust width of letter */
         height: 60%;
-        /* Adjust height of letter */
         transform: scale(1);
-        /* Reset the transform to normal */
         transition-delay: 0s;
-        /* Remove transition delay */
         overflow: hidden;
-        /* Hide any overflow of the letter content */
     }
 
     .flap>.envelope>.letter {
         bottom: 200px;
-        /* Adjust this value to move the paper higher */
         transform: scale(1.5);
         transition-delay: 1s;
     }
