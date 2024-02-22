@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bootstrap Photo Gallery Demo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="jquery.bsPhotoGallery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('ul.first').bsPhotoGallery({
+                "classes": "col-xl-3 col-lg-2 col-md-4 col-sm-4",
+                "hasModal": true,
+                "shortText": false
+            });
+        });
+    </script>
+
+</head>
+
+<style>
+    /**************STYLES ONLY FOR DEMO PAGE**************/
+    @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+    body {
+        background: #ebebeb;
+    }
+</style>
+
+<body>
+    <canvas id="confetti"></canvas>
+
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6sAkwn6LWq29gO7F4xSqYO?utm_source=generator" width="100%" height="352"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <p style="font-size: 13px; text-align: center; color: red;">Aşağı kaydırmadan önce lütfen ilk önce bu şarkıyı açın!
+    </p>
+
+    <div class="container">
+        <div class="envelopes-wrapper">
+            <div class="envelope-wrapper left">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <strong>KARIMMM,</strong>
+                            <p>
+                                Seninle geçirdiğim her an, kalbimdeki sevginin büyüklüğünü daha da derinleştiriyor.
+                                Seninle olan her an, hayatımın
+                                en değerli anı olmaya devam ediyor. Seni sonsuza kadar seveceğim ve seni asla
+                                bırakmayacağım.
+                            </p>
+                            <p>Seni seviyorum aşkımmm. Dünden daha çok ve yarından daha az!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+            <div class="envelope-wrapper right">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <strong>Hatırlıyor musunnn?</strong>
+                            <p>
+                                Yılbaşı akşamı gerçekten plansız çıkmıştık. Gerçekten o akşam asla plan yapmayı
+                                düşünmedim. Sadece seni düşündüm çünkü nerede olursam olsaydım seninle müthiş vakit
+                                geçireceğimi biliyordumm. (Hastane olayı olmamış gibi davranıyoruzzz apkgşlakşgakşkgls)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="containerPhotoGallery">
+        <div class="row"
+            style="text-align:center; border-bottom:1px dashed #ccc;  padding:30px 0 20px 0; margin-bottom:40px;">
+            <div class="col-lg-12">
+                <h3 style="font-family:'Bree Serif', arial; font-weight:bold; font-size:20px;">
+                    <p style="text-decoration:none; color:#666;">DÜNYANIN EN GÜZEL KIZINDAN <span
+                            style="color:hsl(322deg 85% 65%);">FOTİKLER</span></p>
+                </h3>
+                <p> (Biraz sonra dünyanın en tatlış, şapşik, fıstık, güzel (maymuş) kızının fotilerine bakacaksınız.
+                    Eğer şeker hastasıysanız lütfen <strong><a
+                            style="color:hsl(322deg 85% 65%)">BAKMAYINIZ!</a></strong>)</p>
+            </div>
+        </div>
+
+        <ul class="row first">
+            <li>
+                <img alt="Rocking the night away" src="photos/1.jpg">
+                <p>ice chocolate cookie latte</p>
+            </li>
+            <li>
+                <img alt="Yellow sign" src="photos/2.jpg">
+                <p>eşek ve prenses fiona</p>
+            </li>
+            <li>
+                <img alt="Colors" src="photos/3.jpg">
+                <p>ağaç çok güzel bak diyip attığı foto. senin güzelliğine bakmaktan ağaca bakamadım ki</p>
+            </li>
+            <li>
+                <img alt="Retro party" src="photos/4.jpg">
+                <p>50 kuruş var mı?</p>
+            </li>
+            <li>
+                <img alt="Technology soup" src="photos/5.jpg">
+                <p>(güzel bir yemek görür) <br>-hadi hemen yiyelimm <br>(fotosunu çekmediği aklına gelir) <br> -bi sn
+                    önce
+                    çekim</p>
+            </li>
+            <li>
+                <img alt="Legal docs" src="photos/6.jpg">
+                <p>yakışmış mııııı??</p>
+            </li>
+            <li>
+                <img alt="Nature shot" src="photos/7.jpg">
+                <p>aaaaa kamera</p>
+            </li>
+            <li>
+                <img alt="Kid with camera" src="photos/8.jpg">
+                <p>kardan adam olsam beni sever miydinn</p>
+            </li>
+            <li>
+                <img alt="Relax and Chill" src="photos/9.jpg">
+                <p>fotoda peluştan daha tatlı bişi var</p>
+            </li>
+            <li>
+                <img alt="Cool colors" src="photos/10.jpg">
+                <p>kim aldı bunuuuuu</p>
+            </li>
+            <li>
+                <img alt="Jump over" src="photos/11.jpg">
+                <p>yakışmış mııııı?? (2)</p>
+            </li>
+            <li>
+                <img alt="Culture business" src="photos/12.jpg">
+                <p>-ilayda mutlu musun? <br>
+                    -👍👍👍</p>
+            </li>
+
+            <li>
+                <img alt="Spaghetti bitch" src="photos/13.jpg">
+                <p>denizkızı</p>
+            </li>
+            <li>
+                <img alt="Budget this" src="photos/14.jpg">
+                <p>choppaaaa</p>
+            </li>
+            <li>
+                <img alt="Street art" src="photos/15.jpg">
+                <p>iloşşş</p>
+            </li>
+
+
+            <li>
+                <img alt="Insurance and stuff" src="photos/16.jpg">
+                <p>iloşşş ve utkuşşş</p>
+            </li>
+
+            <li>
+                <img alt="Food Explosion" src="photos/17.jpg">
+                <p>öpim</p>
+            </li>
+            <li>
+                <img alt="Office worker sad" src="photos/18.jpg">
+                <p>-sağ mı sol mu <br>
+                    -orta
+                </p>
+            </li>
+
+            <li>
+                <img alt="" src="photos/19.jpg">
+                <p>biz barıştan yanayız</p>
+            </li>
+
+            <li>
+                <img alt="Health" src="photos/20.jpg">
+                <p>o ne bakim</p>
+            </li>
+            <li>
+                <img alt="Constant consecutuir" src="photos/21.jpg"><!--no alt tag-->
+                <p>woaaaa</p>
+            </li>
+            <li>
+                <img alt="Search code" src="photos/22.jpg">
+                <p>rujum nası</p>
+            </li>
+
+            <li>
+                <img alt="Pountac" src="photos/23.jpg"><!--no alt tag, no text-->
+                <p>peki simim?</p>
+            </li>
+            <li>
+                <img alt="Budget again" src="photos/24.jpg">
+                <p>çiçek ol</p>
+            </li>
+            <li>
+                <img alt="Some alt tag" src="photos/25.jpg"><!--no alt-->
+                <p>story mi atcan dur bekle güzel çıkim</p>
+            </li>
+            <li>
+                <img alt="Insurance boy" src="photos/26.jpg">
+                <p>iloş ve elif</p>
+            </li>
+            <li>
+                <img alt="Food service" src="photos/27.jpg">
+                <p>sevgilim bana sweat vermiş yatarken bile giymem lazım</p>
+            </li>
+            <li>
+                <img alt="Dopamine high" src="photos/28.jpg">
+                <p>her yerde giymem lazım dedimmm</p>
+            </li>
+
+        </ul>
+
+
+
+
+    </div> <!-- /container -->
+
+    <div id="flex-container">
+        <div style="align-self: flex-start">
+            <div class="poem">
+
+                <h1>Aşk</h1>
+                <h2>Nazım Hikmet</h2>
+
+                <p>
+                    Seninle yaşamak nefes almak gibi, <br>
+                    bir nefesini verdiğim zaman aldığım gibi... <br>
+                    Benimle yaşamak senin için de öyle... <br>
+                    seninle olmak öyle... <br>
+                    Bir kuş gibi özgürüz o zaman, <br>
+                    ne kar tanesi kalırız ne kara bulut. <br>
+                    Martılar gibi sevinç dolu <br>
+                    ve çocuklar gibi neşeli... <br>
+                    Bir ev, iki odamız, şirin bir bahçemiz olur, <br>
+                    bembeyaz duvarlarını biz boyarız, <br>
+                    pembe pembeliklerini biz yaratırız... <br>
+                    Düşün ki, <br>
+                    sabahları gözlerinle beni uyandırırsın, <br>
+                    gün boyunca yanaklarından öperim seni, <br>
+                    akşamları elimi tutarsın... <br>
+                    İşte o zaman anlarsın aşkı, <br>
+                    işte o zaman anlarsın seni ne kadar sevdiğimi.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="poem">
+
+            <h1>Sevgilim</h1>
+            <h2>Cemal Süreya</h2>
+
+            <p>
+                Sevgilim, bir günün ortası şimdi<br>
+                Taşıtlar hızla gelip geçiyor, her yer kalabalık, <br>
+                Ben seni düşünüyorum bir bodrum kahvesinde <br>
+                Uzat bana uzat ellerini <br>
+                İzinli askerler görüyorum, kırıtarak yürüyen işçi kızlar <br>
+                İstanbul her günkü yaşantısı içinde uğultulu, <br>
+                Güvercinler güneşten bir sessizliği biriktiriyor <br>
+                Ben seni düşünüyorum, seni <br>
+                Hani tıpkı o ilk günlerdeki gibi <br>
+                Kalbim diyorum kalbim <br>
+                Daha dün tezgâhtan çıkmış bir su sayacı gibi <br>
+                Aşkı anılar besliyor düşler kadar <br>
+                Bu yüzden diyorum ki aşk eskidikçe aşktır <br>
+                Sevgi eskidikçe sevgi. <br>
+                Günümüz, ekmeğimiz, türkümüz <br>
+                Çoluğumuz çocuğumuz <br>
+                Binalar yan yana yükselip gidiyor <br>
+                Vapurların ağzı köpük içinde <br>
+                Uzaklarda ne kapılar açılıyor <br>
+                Trenin biri bir istasyona varıyor <br>
+                Ordan çıkıyor biri. <br>
+                Her şey biliyor, her şey <br>
+                Sen biliyor musun bakalım <br>
+                Seni nice sevdiğimi <br>
+                Üstüne titrediğimi <br>
+                Geldiğimi <br>
+                Gittiğimi <br>
+                Hadi! <br>
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        const envelopes = document.querySelectorAll('.envelope-wrapper');
+        envelopes.forEach(envelope => {
+            envelope.addEventListener('click', () => {
+                envelope.classList.toggle('flap');
+            });
+        });
+
+
+
+        let W = window.innerWidth;
+        let H = document.getElementById('confetti').clientHeight;
+        const canvas = document.getElementById('confetti');
+        const context = canvas.getContext("2d");
+        const maxConfettis = 15;
+        const particles = [];
+
+        const possibleColors = [
+            "#ff7336", // Orange
+            "#f9e038", // Yellow
+            "#02cca4", // Cyan
+            "#383082", // Purple
+            "#fed3f5", // Pink
+            "#b1245a", // Red
+            "#f2733f", // Orange
+            "#34ace0", // Sky Blue
+            "#8e44ad", // Violet
+            "#f368e0", // Pink
+            "#3498db", // Blue
+            "#1abc9c", // Green
+            "#e74c3c", // Red
+            "#9b59b6", // Purple
+            "#2ecc71", // Green
+            "#e67e22", // Orange
+            "#16a085", // Dark Green
+            "#c0392b", // Dark Red
+            "#2980b9", // Dark Blue
+            "#f1c40f", // Bright Yellow
+            "#7f8c8d"  // Gray
+        ];
+
+
+        function randomFromTo(from, to) {
+            return Math.floor(Math.random() * (to - from + 1) + from);
+        }
+
+        function confettiParticle() {
+            this.x = Math.random() * W; // x
+            this.y = Math.random() * H - H; // y
+            this.r = randomFromTo(11, 33); // radius
+            this.d = Math.random() * maxConfettis + 11;
+            this.color =
+                possibleColors[Math.floor(Math.random() * possibleColors.length)];
+            this.tilt = Math.floor(Math.random() * 33) - 11;
+            this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
+            this.tiltAngle = 0;
+
+            this.draw = function () {
+                context.beginPath();
+                context.lineWidth = this.r / 2;
+                context.strokeStyle = this.color;
+                context.moveTo(this.x + this.tilt + this.r / 3, this.y);
+                context.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 5);
+                return context.stroke();
+            };
+        }
+
+        function Draw() {
+            const results = [];
+
+            // Magical recursive functional love
+            requestAnimationFrame(Draw);
+
+            context.clearRect(0, 0, W, window.innerHeight);
+
+            for (var i = 0; i < maxConfettis; i++) {
+                results.push(particles[i].draw());
+            }
+
+            let particle = {};
+            let remainingFlakes = 0;
+            for (var i = 0; i < maxConfettis; i++) {
+                particle = particles[i];
+
+                particle.tiltAngle += particle.tiltAngleIncremental;
+                particle.y += (Math.cos(particle.d) + 3 + particle.r / 2) / 2;
+                particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
+
+                if (particle.y <= H) remainingFlakes++;
+
+                // If a confetti has fluttered out of view,
+                // bring it back to above the viewport and let if re-fall.
+                if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
+                    particle.x = Math.random() * W;
+                    particle.y = -30;
+                    particle.tilt = Math.floor(Math.random() * 10) - 20;
+                }
+            }
+
+            return results;
+        }
+
+        window.addEventListener(
+            "resize",
+            function () {
+                W = window.innerWidth;
+                H = window.innerHeight;
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            },
+            false
+        );
+
+        // Push new confetti objects to `particles[]`
+        for (var i = 0; i < maxConfettis; i++) {
+            particles.push(new confettiParticle());
+        }
+
+        // Initialize
+        canvas.width = W;
+        canvas.height = H;
+        Draw();
+    </script>
+</body>
+
+</html>
